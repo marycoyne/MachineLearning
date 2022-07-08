@@ -1,1 +1,3 @@
 # MachineLearning
+
+Write a short report evaluating whether the review text can be used to (i) predict the review polarity (where a game has been “voted up” or not by the reviewer) and (ii) predict whether the review is for an “early access” version of a game or not. Hint: Select two or three machine learning approaches, apply them to the dataset and critically evaluate their classification performance. Remember it’s v important to clearly explain/justify any design choices that you make and any conclusions you arrive at. Include any code you use in an appendix. [75 marks: indicative breakdown (i) feature engineering 20 marks, (ii) machine learning methodology 20 marks, (iii) evaluation 25 marks, (iv) report presentation 10 marks]
