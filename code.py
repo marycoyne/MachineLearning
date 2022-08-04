@@ -16,6 +16,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 vectorizer = CountVectorizer()
 
 #part i
+# kNN
 
 X = vectorizer.fit_transform(reviewTexts)
 X = np.array(X.toarray())
@@ -34,7 +35,8 @@ for train_index, test_index in kf.split(X):
     neigh.fit(X_train, y_train)
     print(neigh.score(X_test, y_test))
 
-'''
+# logistic regression
+    
 from sklearn.model_selection import KFold
 from sklearn.linear_model import LogisticRegression
 
@@ -55,4 +57,3 @@ for train_index, test_index in kf.split(X):
     print("\n")
     
 #predictions = logmodel.predict(X_test)
-'''
