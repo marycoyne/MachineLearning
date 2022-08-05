@@ -16,11 +16,12 @@ from sklearn.feature_extraction.text import CountVectorizer
 vectorizer = CountVectorizer()
 
 #part i
-# kNN
 
 X = vectorizer.fit_transform(reviewTexts)
 X = np.array(X.toarray())
 y = np.array(posiRev)
+
+#kNN
 
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import KFold
