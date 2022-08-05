@@ -16,6 +16,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 vectorizer = CountVectorizer()
 
 #part i
+#logistic regression
 
 X = vectorizer.fit_transform(reviewTexts)
 X = np.array(X.toarray())
