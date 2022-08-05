@@ -21,8 +21,6 @@ X = vectorizer.fit_transform(reviewTexts)
 X = np.array(X.toarray())
 y = np.array(posiRev)
 
-#kNN
-
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import KFold
 
@@ -35,8 +33,6 @@ for train_index, test_index in kf.split(X):
     neigh = KNeighborsClassifier(n_neighbors=6)
     neigh.fit(X_train, y_train)
     print(neigh.score(X_test, y_test))
-
-# logistic regression
     
 from sklearn.model_selection import KFold
 from sklearn.linear_model import LogisticRegression
