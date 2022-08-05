@@ -17,7 +17,7 @@ vectorizer = CountVectorizer()
 
 X = vectorizer.fit_transform(reviewTexts)
 X = np.array(X.toarray())
-y = np.array(posiRev)
+y = np.array(posiRev)       # change posiRev to eaRev for part ii
 
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import KFold
